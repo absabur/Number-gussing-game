@@ -1,0 +1,94 @@
+*{
+    font-family: 'Arial Narrow Bold', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.result-section{
+    display: none;
+}
+
+.nav{
+    background-color: rgb(28, 45, 65);
+    color: white;
+}
+
+ul{
+    padding: 10px;
+}
+
+li{
+    font-size: 17px;
+}
+
+h1{
+    margin: 10px;
+    text-align: center;
+}
+h2{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.input, .ruls, .nav{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 2px black;
+}
+
+.hint{
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(94, 255, 0);
+    margin-top: 10px;
+}
+
+form{
+    margin: 1rem;
+}
+
+.flex{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(28, 45, 65);
+    color: white;
+}
+
+.input{
+    background-color: rgb(28, 45, 65);
+    color: white;
+}
+
+.input input, button{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: antiquewhite;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 2px black;
+    transition: all 0.1s;
+}
+button:hover{
+    box-shadow: 0 0 5px black;
+}
+
+
+
+.reset{
+    background-color: tomato;
+    color: white;
+}
+
+.play-again{
+    background-color: rgb(94, 255, 0);
+}
+
+.remain{
+    font-size: 25px;
+    font-weight: 500;
+}

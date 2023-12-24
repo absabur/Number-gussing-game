@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Number gussing game</title>
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <h1>Number Gussing Game</h1>
+        </div>
+        <div class="container">
+            <div class="ruls">
+                <h2>Rules</h2>
+                <ul>
+                    <li>You will get only 3 chance.</li>
+                    <li>You will get a hint after a wrong guess.</li>
+                    <li>If you can guess the number in 3 chance you will be winner.</li>
+                    <li>After 3 tries, if you can not guess the number you will loss the game.</li>
+                </ul>
+            </div>
+            <div class="input">
+                <h2>Choose a number from 0 to 9.</h2>
+                <p class="remain">try remains</p>
+                <p class="hint"></p>
+                <form>
+                    <input min="0" max="9" style="width: 230px;" required type="number" placeholder="Enter a number (0-9)">
+                    <button style="background: rgb(94, 255, 0);" type="submit">Enter</button>
+                </form>
+                <button class="reset">Reset game</button>
+            </div>
+            <div class="result-section">
+                <h2 class="result"></h2>
+                <button class="play-again">Play Again</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
