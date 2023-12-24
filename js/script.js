@@ -27,18 +27,18 @@ form?.addEventListener("submit", (e) => {
   if (totalTry === 0) {
     resultSec.classList.add("flex");
     playSection.style.display = "none";
-    result.innerHTML = "<span style='color: tomato'>You loss the game.</span>";
+    result.innerHTML = `<span style='color: tomato; text-align: center;'>You lose!</span> <br/> Correct Number was: ${random}`;
   }
   remain.innerHTML = `<span style="color: ${color(totalTry)}">${totalTry}</span> try remains`;
   let inputValue = inputField?.value;
   if (inputValue == parseInt(random)) {
     resultSec?.classList.add("flex");
     playSection.style.display = "none";
-    result.innerHTML = "<span style='color: rgb(94, 255, 0)'>You won the game.</span>";
+    result.innerHTML = "<span style='color: rgb(94, 255, 0)'>You win</span>";
   } else if (inputValue > parseInt(random)) {
-    hint.innerHTML = "Hint: Try a smaller one.";
+    hint.innerHTML = "Hint: Correct answer is smaller!";
   } else if (inputValue < parseInt(random)) {
-    hint.innerHTML = "Hint: Try a bigger one.";
+    hint.innerHTML = "Hint: Correct answer is greater!";
   }
   inputField.value = null;
 });
